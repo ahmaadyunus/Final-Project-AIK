@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FinalProjectAIK</string>
+    <string name="Ateam">Team A</string>
+    <string name="Bteam">Team B</string>
+    <string name="btnReset">reset</string>
+    <string name="btnDecision">decision</string>
+    <string name="btn3Point">+3 points</string>
+    <string name="btn2Point">+2 points</string>
+    <string name="btnFreeThrow">free throw</string>
+</resources>

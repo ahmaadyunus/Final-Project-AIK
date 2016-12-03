@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ahmaadyunus.finalprojectaik.MainActivity">
+
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       >
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical"
+           android:paddingBottom="10dp"
+           android:paddingRight="20dp"
+           android:paddingLeft="20dp"
+           >
+           <TextView
+               style="@style/nameTeam"
+               android:text="@string/Ateam"/>
+           <TextView
+               style="@style/scoreTeam"
+               android:id="@+id/scoreA" />
+           <Button
+              style="@style/buttonPoint"
+               android:text="@string/btn3Point"
+
+               android:onClick="threePointA" />
+           <Button
+               style="@style/buttonPoint"
+               android:text="@string/btn2Point"
+               android:onClick="twoPointA" />
+           <Button
+               style="@style/buttonPoint"
+               android:text="@string/btnFreeThrow"
+               android:onClick="freeThrowA" />
+       </LinearLayout>
+       <View
+           android:layout_width="2dp"
+           android:layout_height="match_parent"
+           android:background="#c0c0c0"
+           android:paddingBottom="40dp"/>
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_weight="1"
+           android:orientation="vertical"
+           android:paddingBottom="10dp"
+           android:paddingRight="20dp"
+           android:paddingLeft="20dp"
+           >
+           <TextView
+               style="@style/nameTeam"
+               android:text="@string/Bteam"/>
+           <TextView
+               style="@style/scoreTeam"
+               android:id="@+id/scoreB" />
+           <Button
+               style="@style/buttonPoint"
+               android:text="@string/btn3Point"
+               android:onClick="threePointB" />
+           <Button
+               style="@style/buttonPoint"
+               android:text="@string/btn2Point"
+               android:onClick="twoPointB" />
+           <Button
+               style="@style/buttonPoint"
+               android:text="@string/btnFreeThrow"
+               android:onClick="freeThrowB" />
+       </LinearLayout>
+
+   </LinearLayout>
+    <TextView
+        style="@style/scoreTeam"
+        android:text=" "
+        android:textSize="25sp"
+        android:id="@+id/textView_Decision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="105dp"
+        android:textColor="#747070" />
+
+    <Button
+        style="@style/buttonPoint"
+        android:layout_width="wrap_content"
+        android:text="@string/btnDecision"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnDecision"
+        android:layout_marginBottom="80dp"    />
+    <Button
+        style="@style/buttonPoint"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:text="@string/btnReset"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnReset"
+        android:id="@+id/btnReset" />
+
+</RelativeLayout>
